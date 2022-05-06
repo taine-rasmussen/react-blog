@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 // Components
 import Landing from './Landing'
 import Textbox from '../Library/Textbox'
+import Button from '../Library/Button'
 
 const StateBlog = () => {
 
@@ -14,7 +15,7 @@ const StateBlog = () => {
     <div className="stateblog-container">
       <div>
         <h1>useState</h1>
-        <Link to='/'>Home</Link>
+        <Button displayText={'Home'} path={'/'} />
       </div>
       <div className="stateblog-body">
         <Textbox text={exampleText} />
