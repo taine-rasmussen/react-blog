@@ -5,7 +5,6 @@ import Button from '../Library/Button'
 
 const StateBlog = () => {
 
-
   const exampleText = 'this is some example text about useState'
 
   return (
