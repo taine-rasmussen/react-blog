@@ -1,8 +1,5 @@
 import './App.css';
 import { Routes, Route } from "react-router-dom";
-
-
-// Components
 import Landing from './Components/Landing'
 import StateBlog from './Components/StateBlog'
 
@@ -11,7 +8,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route exact path="/" element={<Landing />} />
-        <Route exact path="usestate" element={<StateBlog />} />
+        <Route exact path="useState" element={<StateBlog />} />
       </Routes>
     </div>
   );

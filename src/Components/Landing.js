@@ -1,10 +1,11 @@
 import React from 'react'
-import { Link } from "react-router-dom";
-
-// Components
-import StateBlog from './StateBlog'
+import Button from '../Library/Button'
 
 const Landing = () => {
+
+  const blogLinks = ['useState', 'useEffect', 'useMemo']
+
+
   return (
     <div className="landing-container">
       <div className="landing-headers">
@@ -12,9 +13,7 @@ const Landing = () => {
         <h3>A home for all things react</h3>
       </div>
       <div>
-        <Link to='usestate'>
-          <button>useState</button>
-        </Link>
+        {blogLinks.map(link => (<Button text={link} path={link} />))}
       </div>
     </div>
   )

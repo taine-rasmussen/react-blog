@@ -1,17 +1,16 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
-
 const Button = (props) => {
 
    const {
-      displayText,
+      text,
       path
    } = props
 
    return (
       <>
-         <Link to={path}>{displayText}</Link>
+         <Link to={path}><button>{text}</button></Link>
       </>
    )
 }
