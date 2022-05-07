@@ -15,6 +15,23 @@
   margin-top: 2rem;
 }
 
+.darkmode-container button {
+  font-size: 10px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  outline: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #61dafb;
+  background-color: #202329;
+  border: 2px solid #32363e;
+  border-radius: 10px;
+}
+
+.darkmode-container button:hover {
+  border-color: #61dafb;
+}
+
 .landing-headers {
   justify-content: center;
   margin-top: -3rem;

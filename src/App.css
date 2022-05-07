@@ -18,5 +18,4 @@ body {
 
 .link-button:hover {
   border: 1px solid #61dafb !important;
-  transform: scale(1.05);
 }
