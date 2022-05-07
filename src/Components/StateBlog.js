@@ -1,6 +1,7 @@
 import React from 'react'
 import SyntaxHighLighter from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
+import '../Styles/State.css'
 
 import Textbox from '../Library/Textbox'
 import Button from '../Library/Button'
