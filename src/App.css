@@ -2,7 +2,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  margin: 4rem;
+  margin: 0;
 }
 
 .landing-container {
@@ -10,6 +10,5 @@ body {
   width: 100vw;
   background-color: aqua;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
 }
