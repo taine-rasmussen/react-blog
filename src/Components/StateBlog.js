@@ -4,7 +4,7 @@ import { dracula } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 import '../Styles/State.css'
 
 import Textbox from '../Library/Textbox'
-import Button from '../Library/Button'
+import LinkButton from '../Library/LinkButton'
 
 const StateBlog = () => {
   const exampleText = 'this is some example text about useState'
@@ -13,7 +13,7 @@ const StateBlog = () => {
     <div className="stateblog-container">
       <div>
         <h1>useState</h1>
-        <Button text={'Home'} path={'/'} />
+        <LinkButton text={'Home'} path={'/'} />
       </div>
       <div className="stateblog-body">
         <Textbox text={exampleText} />
