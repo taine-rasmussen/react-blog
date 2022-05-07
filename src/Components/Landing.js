@@ -4,7 +4,11 @@ import '../Styles/Landing.css'
 
 const Landing = () => {
   const [darkMode, setDarkMode] = useState(true)
-  const blogLinks = ['useState', 'useEffect', 'useMemo']
+  const blogLinks = [
+    { name: 'useState', description: 'The useState hook allows us to create state variables in a React function component.' },
+    { name: 'useEffect', description: 'The useEffect hook lets us perform side effects in function components.' },
+    { name: 'useMemo', description: 'useMemo is very similar to useCallback and helps improve performance. But instead of being for callbacks, it is for storing the results of expensive operations.' },
+  ]
 
   const themeStyles = {
     color: darkMode ? '#fff' : '#000',
@@ -27,9 +31,10 @@ const Landing = () => {
         </div>
       </div>
       <div className='landing-body'>
-        {blogLinks.map(link => (
-          <div className='landing-item' key={link}>
-            <Button text={link} path={link} />
+        {blogLinks.map(hook => (
+          <div className='landing-item' key={hook.name}>
+            <Button text={hook.name} path={hook.name} />
+            <p>{hook.description}</p>
           </div>
         ))}
       </div>
