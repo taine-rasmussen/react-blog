@@ -14,7 +14,11 @@ const LinkButton = (props) => {
       <Link to={path}>
         <button
           className="link-button"
-          style={{ color: '#202329' }}
+          style={{
+            color: darkMode ? '#61DAFB' : '#202329',
+            border: '2px solid #202329',
+            backgroundColor: darkMode ? '#32363E' : '#fff',
+          }}
         >{text}</button>
       </Link>
     </>

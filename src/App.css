@@ -12,7 +12,11 @@ body {
   letter-spacing: 1px;
   padding: 13px 50px 13px;
   outline: 0;
-  border: 2px solid black;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.link-button:hover {
+  border: 1px solid #61dafb !important;
+  transform: scale(1.05);
 }
