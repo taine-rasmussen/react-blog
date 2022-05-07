@@ -32,7 +32,16 @@
 }
 
 .landing-body {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.landing-item {
+.landing-item-container {
+  display: flex;
+  margin: 50px;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
