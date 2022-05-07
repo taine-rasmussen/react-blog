@@ -1,10 +1,14 @@
 import React, { useState, useMemo } from 'react'
 import LinkButton from '../Library/LinkButton'
 import '../Styles/Landing.css'
+import { DiReact } from 'react-icons/di';
+
+
+
 
 const Landing = () => {
   const [darkMode, setDarkMode] = useState(true)
-  const blogLinks = ['useState', 'useEffect', 'useMemo']
+  const blogLinks = ['useState', 'useEffect', 'useMemo', 'useCallback', 'useRef', 'useReducer', 'useContext', 'useLayoutEffect', 'Custom Hooks']
   const themeStyles = {
     color: darkMode ? '#61DAFB' : '#202329',
     backgroundColor: darkMode ? '#202329' : '#fff'
@@ -15,7 +19,7 @@ const Landing = () => {
       <div className="darkmode-container">
         <button
           onClick={() => { setDarkMode(prevDarkMode => !prevDarkMode) }}
-        >Dark</button >
+        >{<DiReact />}</button >
       </div>
       <div className="landing-headers">
         <div
