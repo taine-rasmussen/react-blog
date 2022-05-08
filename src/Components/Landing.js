@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react'
 import LinkButton from '../Library/LinkButton'
 import '../Styles/Landing.css'
 import { DiReact } from 'react-icons/di';
+import Darkmode from '../Library/Darkmode'
 
 
 
@@ -21,10 +22,8 @@ const Landing = (props) => {
 
   return (
     <div className="landing-container" style={themeStyles}>
-      <div className="darkmode-container">
-        <button
-          onClick={() => { setDarkMode(prevDarkMode => !prevDarkMode) }}
-        >{<DiReact />}</button >
+      <div className="landing-toggle">
+        <Darkmode setDarkMode={setDarkMode} />
       </div>
       <div className="landing-headers">
         <div

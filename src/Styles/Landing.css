@@ -6,29 +6,12 @@
   align-items: center;
 }
 
-.darkmode-container {
+.landing-toggle {
   height: 5vh;
   width: 80vw;
   display: flex;
   justify-content: flex-end;
   margin-top: 2rem;
-}
-
-.darkmode-container button {
-  font-size: 2rem;
-  font-weight: 300;
-  letter-spacing: 1px;
-  outline: 0;
-  border-radius: 10px;
-  cursor: pointer;
-  color: #61dafb;
-  background-color: #32363e;
-  border: 2px solid #32363e;
-  border-radius: 10px;
-}
-
-.darkmode-container button:hover {
-  border-color: #61dafb;
 }
 
 .landing-headers {

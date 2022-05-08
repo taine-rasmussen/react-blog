@@ -1,11 +1,11 @@
 import React from 'react'
 import SyntaxHighLighter from 'react-syntax-highlighter';
-import { dracula } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 import { DiReact } from 'react-icons/di';
 import '../Styles/State.css'
 
 import Textbox from '../Library/Textbox'
 import LinkButton from '../Library/LinkButton'
+import Darkmode from '../Library/Darkmode'
 import { pojoaque } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 
 const StateBlog = (props) => {
@@ -22,11 +22,9 @@ const StateBlog = (props) => {
 
   return (
     <div className="stateblog-container" style={themeStyles}>
-      <div className="stageblog-nav darkmode-container">
+      <div className="stageblog-nav">
         <LinkButton text={'Home'} path={'/'} darkMode={darkMode} />
-        <button
-          onClick={() => { setDarkMode(prevDarkMode => !prevDarkMode) }}
-        >{<DiReact />}</button >
+        <Darkmode setDarkMode={setDarkMode} />
       </div>
       <div className="stateblog-header">
         <h1>useState</h1>

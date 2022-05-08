@@ -19,3 +19,20 @@ body {
 .link-button:hover {
   border: 1px solid #61dafb !important;
 }
+
+.darkmode-toggle {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  outline: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #61dafb;
+  background-color: #32363e !important;
+  border: 1px solid #32363e !important;
+  border-radius: 10px;
+}
+
+.darkmode-toggle:hover {
+  border-color: #61dafb !important;
+}
