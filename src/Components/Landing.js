@@ -6,8 +6,13 @@ import { DiReact } from 'react-icons/di';
 
 
 
-const Landing = () => {
-  const [darkMode, setDarkMode] = useState(true)
+const Landing = (props) => {
+  const {
+    darkMode,
+    setDarkMode
+  } = props
+
+
   const blogLinks = ['useState', 'useEffect', 'useMemo', 'useCallback', 'useRef', 'useReducer', 'useContext', 'useLayoutEffect', 'Custom Hooks']
   const themeStyles = {
     color: darkMode ? '#61DAFB' : '#202329',
