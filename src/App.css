@@ -36,3 +36,12 @@ body {
 .darkmode-toggle:hover {
   border-color: #61dafb !important;
 }
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 5vh;
+  width: 80%;
+  margin-top: 2rem;
+}

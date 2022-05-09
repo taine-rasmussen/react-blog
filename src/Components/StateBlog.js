@@ -5,7 +5,7 @@ import '../Styles/State.css'
 
 import Textbox from '../Library/Textbox'
 import LinkButton from '../Library/LinkButton'
-import Darkmode from '../Library/Darkmode'
+import Nav from '../Library/Nav'
 import { pojoaque } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 
 const StateBlog = (props) => {
@@ -22,10 +22,12 @@ const StateBlog = (props) => {
 
   return (
     <div className="stateblog-container" style={themeStyles}>
-      <div className="stageblog-nav">
-        <LinkButton text={'Home'} path={'/'} darkMode={darkMode} />
-        <Darkmode setDarkMode={setDarkMode} />
-      </div>
+      <Nav
+        darkMode={darkMode}
+        setDarkMode={setDarkMode}
+      />
+      {/* <LinkButton text={'Home'} path={'/'} darkMode={darkMode} />
+        <Darkmode setDarkMode={setDarkMode} /> */}
       <div className="stateblog-header">
         <h1>useState</h1>
       </div>
@@ -33,7 +35,7 @@ const StateBlog = (props) => {
         <Textbox text={exampleText} />
         <SyntaxHighLighter language="javascript" style={pojoaque}>
           {
-            "const func = () => {}"
+            "const [count, setCount] = useState(4)"
           }
         </SyntaxHighLighter>
       </div>
