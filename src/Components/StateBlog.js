@@ -4,9 +4,9 @@ import { DiReact } from 'react-icons/di';
 import '../Styles/State.css'
 
 import Textbox from '../Library/Textbox'
-import LinkButton from '../Library/LinkButton'
 import Nav from '../Library/Nav'
 import { pojoaque } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
+import stateCopy from '../Copy/State'
 
 const StateBlog = (props) => {
   const {
@@ -14,7 +14,6 @@ const StateBlog = (props) => {
     setDarkMode
   } = props
 
-  const exampleText = 'this is some example text about useState'
   const themeStyles = {
     color: darkMode ? '#61DAFB' : '#202329',
     backgroundColor: darkMode ? '#202329' : '#fff'
@@ -22,21 +21,25 @@ const StateBlog = (props) => {
 
   return (
     <div className="stateblog-container" style={themeStyles}>
-      <Nav
-        darkMode={darkMode}
-        setDarkMode={setDarkMode}
-      />
-      {/* <LinkButton text={'Home'} path={'/'} darkMode={darkMode} />
-        <Darkmode setDarkMode={setDarkMode} /> */}
+      <Nav darkMode={darkMode} setDarkMode={setDarkMode} />
       <div className="stateblog-header">
         <h1>useState</h1>
       </div>
       <div className="stateblog-body">
-        <Textbox text={exampleText} />
+        <h3 style={{ color: darkMode ? '#61DAFB' : '#202329' }}>Getting started</h3>
+        <Textbox text={stateCopy.gettingStarted} darkMode={darkMode} />
+        <div className="stateblog-code">
+          <SyntaxHighLighter language="javascript" style={pojoaque}>
+            {"import { useState } from 'react'"}
+          </SyntaxHighLighter>
+        </div>
+        <Textbox text={stateCopy.setup} darkMode={darkMode} />
         <SyntaxHighLighter language="javascript" style={pojoaque}>
-          {
-            "const [count, setCount] = useState(4)"
-          }
+          {"const [count, setCount] = useState(4)"}
+        </SyntaxHighLighter>
+        <Textbox text={stateCopy.countExample} darkMode={darkMode} />
+        <SyntaxHighLighter language="javascript" style={pojoaque}>
+          {"const incrementCount = () => { setCount(prevCount => prevCount + 1)}"}
         </SyntaxHighLighter>
       </div>
     </div>
